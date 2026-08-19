@@ -1,32 +1,63 @@
-# Prerequisites
-*.d
+# =========================
+# PLATFORMIO
+# =========================
+.pio/
+.pioenvs/
+.piolibdeps/
+.piodeps/
+.platformio/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# =========================
+# BUILD / BINARIOS
+# =========================
+*.bin
+*.elf
+*.map
 
-# Precompiled Headers
-*.gch
-*.pch
+# =========================
+# VS CODE (configuración local)
+# =========================
+.vscode/*
+!.vscode/extensions.json
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# =========================
+# ARCHIVOS TEMPORALES
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
 
-# Fortran module files
-*.mod
-*.smod
+# =========================
+# SISTEMA OPERATIVO
+# =========================
+.DS_Store
+Thumbs.db
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# =========================
+# SECRETOS (MUY IMPORTANTE)
+# =========================
+# Credenciales TTN (AppKey, DevEUI...). NUNCA deben subirse.
+# Se publica solo la plantilla credentials.h.example
+credentials.h
+include/credentials.h
+src/credentials.h
 
-# Executables
-*.exe
-*.out
-*.app
+secrets.h
+include/secrets.h
+src/secrets.h
+config_secrets.h
+
+# Otros ficheros que suelen contener datos sensibles
+*.pem
+*.key
+.env
+.env.*
+
+# =========================
+# OTROS
+# =========================
+*.zip
+*.tar
+*.gz
